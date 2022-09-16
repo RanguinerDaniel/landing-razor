@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- behavior -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razor - Landing Page</title>
+    <!-- static files -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link type="image/png" sizes="32x32" rel="icon" href="https://workstation.razor.com.br/favicon.ico" />
+    <!-- SEO -->
+    <meta name="description" content="Projeto do Squad-14-Código-Fonte para o Programa #TeuFuturo.">
+    <meta name="keywords"
+        content="Razor computadores, computador, workstation, comprar computador, melhor computador, computador bom, computador para design, computador para empresa, autodesk">
+    <meta name="author" content="Team codigoFonte">
+    <meta name="robots" content="index, follow">
+    <meta name=”revisit-after” content=”1 days” />
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+            <div class="container">
+                <a href="" class="navbar-brand">
+                    <img src="./assets/img/logo_branca_sem_fundo.png" alt="logo da razor">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu"
+                    aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="main-menu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about-razor">Sobre a razor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#catalogo">Catalogo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#our-team">Nossa equipe</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact-us">Fale conosco</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- hero -->
+    <div class="jumbotron">
+        <div class="overlay">
+            <div class="container hero-text div-center p-4">
+                <h1 class="hero-title h1">Computadores de alta performace</h1>
+                <p class="hero-subtitle col-md-6">
+                    Cuidadosamente modelados para transformar a
+                    realidadade dos seus projetos, muito mais agilidade na busca pela máxima produtividade.</p>
+                <a type="button" href="#catalogo" class="d-flex justify-content-center btn button-hero btn-lg">Faça sua
+                    escolha</a>
+            </div>
+        </div>
+    </div>
+    <div class="container p-4" id="about-razor">
+        <div class="about-razor">
+            <h2 class="about-title">Sobre a Razor</h2>
+            <p class="p-2">
+                Fundada em 2014, a Razor Computadores tornou-se referência na modelagem de estações de trabalho de alto
+                desempenho, projetadas para atender os softwares mais exigentes do mercado.
+                Do norte ao sul do país, já entregamos soluções para os 27 estados.
+            </p>
+            <div class="showcases">
+                <p>Casos de sucesso com a Razor</p>
+                <figure class="figure">
+                    <img src="../project/assets/img/cliente-usp.png" class="figure-img img-fluid m-2" alt="cliente usp">
+                    <img src="../project/assets/img/cliente-prf.png" class="figure-img img-fluid m-2" alt="cliente PRF">
+                    <img src="../project/assets/img/cliente-itaipu.png" class="figure-img img-fluid m-2"
+                        alt="cliente taipu">
+                    <img src="../project/assets/img/cliente-infraero.png" class="figure-img img-fluid m-2"
+                        alt="cliente cliente-infraero">
+                    <img src="../project/assets/img/cliente-globo.png" class="figure-img img-fluid m-2"
+                        alt="cliente-globo">
+                    <img src="../project/assets/img/cliente-unb.png" class="figure-img img-fluid m-2" alt="cliente-unb">
+                    <img src="../project/assets/img/cliente-ufrgs.png" class="figure-img img-fluid m-2"
+                        alt="cliente-ufrgs">
+                </figure>
+            </div>
+        </div>
+    </div>
+
+    <!--Workstations Cards-->
+    <div id="catalogo">
+        <div class="container text-center">
+            <div class="row" style="padding: 50px; padding-top: 25px;">
+                <div class="col-12">
+                    <h3 class="main-title">Destaques da temporada</h3><br>
+                </div>
+
+                <div class="col-md-3 mt-2">
+                    <div class="card">
+                        <img src="../project/assets/img/lean.jpg" class="car-img-top" alt="workstation 1">
+                        <div class="car-body">
+                            <h5 class="card-title">Lean</h5>
+                            <p class="card-text">Especificações</p>
+                            <p class="especs">Até 4 núcleos</p>
+                            <p class="especs">Intel Core I3-12100</p>
+                            <p class="especs">Intel UHD Graphics</p>
+                            <p class="especs">DDR4 até 3200MHz</p><br>
+                            <a onclick="selected(1);" href="#contact-us"
+                                class="btn btn-primary mb-4" style="background-color: blueviolet;">Orçar Agora</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mt-2">
+                    <div class="card">
+                        <img src="../project/assets/img/talent.jpg" class="car-img-top" alt="workstation 2">
+                        <div class="car-body">
+                            <h5 class="card-title">Talent</h5>
+                            <p class="card-text">Especificações</p>
+                            <p class="especs">Até 6 núcleos</p>
+                            <p class="especs">AMD Ryzen 5 5600G ou Intel Core i5-12400</p>
+                            <p class="especs">GeForce GTX 1650</p>
+                            <p class="especs">DDR4 até 3200MHz</p>
+                            <a onclick="selected(2);" href="#contact-us"
+                                class="btn btn-primary mb-4" style="background-color: blueviolet;">Orçar Agora</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mt-2">
+                    <div class="card">
+                        <img src="../project/assets/img/prodigy.jpg" class="car-img-top" alt="workstation 3">
+                        <div class="car-body">
+                            <h5 class="card-title">Prodigy</h5>
+                            <p class="card-text">Especificações</p>
+                            <p class="especs">Até 8 núcleos</p>
+                            <p class="especs">AMD Ryzen 7 5800G ou Intel Core i5-12400</p>
+                            <p class="especs">GeForce RTX 3050 ou RTX 3060</p>
+                            <p class="especs">DDR4 até 3200MHz</p>
+                            <a onclick="selected(3)" href="#contact-us"
+                                class="btn btn-primary mb-4" style="background-color: blueviolet;">Orçar Agora</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mt-2">
+                    <div class="card">
+                        <img src="../project/assets/img/virtuos.jpg" class="car-img-top" alt="workstation 4">
+                        <div class="car-body">
+                            <h5 class="card-title">Virtuos</h5>
+                            <p class="card-text">Especificações</p>
+                            <p class="especs">Até 64 núcleos</p>
+                            <p class="especs">AMD Ryzen Threadripper 3960X ou 397WX</p>
+                            <p class="especs">GeForce GTX 1650</p>
+                            <p class="especs">DDR4 até 3200MHz</p>
+                            <a onclick="selected(4)" href="#contact-us"
+                                class="btn btn-primary mb-4" style="background-color: blueviolet;">Orçar Agora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container" id="our-team">
+        <h3 class="text-center mt-4">Nossa equipe</h3>
+        <div class="row">
+            <div class="col-xl-4 col-sm-6 mb-md-5 mb-sm-2">
+                <div class="bg-white rounded py-3 text-center">
+                    <img src="./assets/img/squad/andrea.jpg" alt="" width="100"
+                        class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <p class="name fw-bolder">Andrea Noer</p>
+                    <p class="role">líder | UX/UI designer</p>
+                    <a class="btn btn-outline-dark mt-2" href="https://www.linkedin.com/in/andrea-noer-076a953a"
+                        target="_blank">
+                        <span class='title'>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-sm-6 mb-md-5 mb-sm-2">
+                <div class="bg-white rounded py-3 text-center">
+                    <img src="./assets/img/squad/marcos.jpg" alt="" width="100"
+                        class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <p class="name fw-bolder">Marcos Pedro</p>
+                    <p class="role">Desenvolvedor</p>
+                    <a class="btn btn-outline-dark mt-2" href="https://www.linkedin.com/in/marcospcmalmeida/"
+                        target="_blank">
+                        <span class='title'>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-sm-6 mb-md-5 mb-sm-2">
+                <div class="bg-white rounded py-3 text-center">
+                    <img src="./assets/img/squad/Michelle.jpg" alt="" width="100"
+                        class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <p class="name fw-bolder">Michele</p>
+                    <p class="role">Scrum master | Copywriter</p>
+                    <a class="btn btn-outline-dark mt-2" href="https://www.linkedin.com/in/michelle-ferla-8a2553207/"
+                        target="_blank">
+                        <span class='title'>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-sm-6 mb-md-5 mb-sm-2">
+                <div class="bg-white rounded py-3 text-center">
+                    <img src="./assets/img/squad/ranguiner.jpg" alt="" width="100"
+                        class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <p class="name fw-bolder">Ranguiner Daniel</p>
+                    <p class="role">Desenvolvedor | UX/UI designer</p>
+                    <a class="btn btn-outline-dark mt-2" href="https://www.linkedin.com/in/ranguiner-daniel-91261222a/"
+                        target="_blank">
+                        <span class='title'>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-sm-6 mb-md-5 mb-sm-2">
+                <div class="bg-white rounded py-3 text-center">
+                    <img src="./assets/img/squad/raquel.jpg" alt="" width="100"
+                        class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <p class="name fw-bolder">Raquel da Silva</p>
+                    <p class="role">Apresentadora</p>
+                    <a class="btn btn-outline-dark mt-2" href="http://www.linkedin.com/in/raquel-da-silva-663202250"
+                        target="_blank">
+                        <span class='title'>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="col-xl-4 col-sm-6 mb-5">
+                <div class="bg-white rounded py-3 text-center">
+                    <img src="./assets/img/squad/ticiane.jpg" alt="" width="100"
+                        class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <p class="name fw-bolder">Ticiane Nunes</p>
+                    <p class="role">UX/UI designer</p>
+                    <a class="btn btn-outline-dark mt-2" href="https://www.linkedin.com/in/ticiane-nunes-48721b250"
+                        target="_blank">
+                        <span class='title'>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="contact-us">
+        <div class="container mt-2 mt-md-5 mt-md-5 mt-lg-5 mt-xl-5 mt-xxl-5">
+            <p class="h3 text-center">Fale conosco</p>
+            <form>
+                <div class="form- group mt-2">
+                    <label for="name">Nome</label>
+                    <input type="text" class="form-control mt-2" id="name" aria-describedby="digite seu nome"
+                        placeholder="Digite seu nome..." required>
+                </div>
+                <div class="form-group mt-4">
+                    <label for="surname">Sobrenome</label>
+                    <input type="text" class="form-control mt-2" id="surname" aria-describedby="digite seu sobrenome"
+                        placeholder="Digite seu sobrenome..." required>
+                </div>
+                <div class="form-group mt-4">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control mt-2" id="email" aria-describedby="digite seu amail"
+                        placeholder="Digite email..." required>
+                </div>
+                <div class="form-group mt-4">
+                    <label for="name">Área de atuação</label>
+                    <input type="text" class="form-control mt-2" id="name" aria-describedby="area de atuação"
+                        placeholder="Digite aqui..." required>
+                </div>
+                <div class="form-group mt-4">
+                    <label for="purpose">Para qual finalidade pretende empregar a máquina?</label>
+                    <textarea oninput='if(this.scrollHeight > this.offsetHeight) this.rows += 1'
+                        class="form-control mt-2 pe-auto" id="purpose" rows="3" placeholder="Digite aqui.."
+                        required></textarea>
+                </div>
+                <div class="text-center justify-content-lg-center mt-3">
+                    <p class="text-center h5 mb-4 mt-4">Qual workstation mais te interessou?</p>
+                    <div class="row">
+                        <div class="col m-auto">
+                            <input class="form-check-input" type="hidden" id="lean" value="1">
+                            <label class="form-check-label" for="lean">
+                                <div class="card chosen-card" onclick="selected(1, true);">
+                                    <img draggable="false" id="lean-selector" class="card-img-top"
+                                        src="../project/assets/img/lean.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <p class="name-machine-chose">Lean</p>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="col m-auto">
+                            <input class="form-check-input" type="hidden" id="talent" value="2">
+                            <label class="form-check-label" for="talent">
+                                <div class="card chosen-card" onclick="selected(2, true);">
+                                    <img draggable="false" id="talent-selector" class="card-img-top"
+                                        src="../project/assets/img/talent.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <p class="name-machine-chose">Talent</p>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="col m-auto">
+                            <input class="form-check-input" type="hidden" id="prodigy" value="3">
+                            <label class="form-check-label" for="prodigy">
+                                <div class="card chosen-card" onclick="selected(3, true);">
+                                    <img draggable="false" id="prodigy-selector" class="card-img-top"
+                                        src="../project/assets/img/prodigy.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <p class="name-machine-chose">Prodigy</p>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="col m-auto">
+                            <input class="form-check-input" type="hidden" id="virtuos" value="4">
+                            <label class="form-check-label" for="virtuos">
+                                <div class="card chosen-card" onclick="selected(4, true);">
+                                    <img draggable="false" id="virtuos-selector" class="card-img-top"
+                                        src="../project/assets/img/virtuos.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <p class="name-machine-chose">Virtuos</p>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer class="footer text-center mt-4">
+        <p>© Razor do Brasil LTDA | Desenvolvido por Código Fonte 2022</p>
+    </footer>
+    <!---- static files - JS ---->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/fd7a5cad59.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./assets/js/Script.js"></script>
+</body>
+
+</html>

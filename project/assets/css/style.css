@@ -1,0 +1,116 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden !important;
+}
+
+/** common style **/
+.div-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/** hero - Jumbotron **/
+.jumbotron {
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/workstation-bg.jpg);
+    background-repeat: no-repeat;
+    height: 95vh;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.hero-text {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+.hero-text .hero-title,
+.hero-subtitle {
+    color: #ffffff !important;
+}
+
+.button-hero {
+    background-color: #6833F4;
+    color: #ffff;
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+.button-hero:hover {
+    color: #ffffff;
+    background-color: #7115F2;
+}
+
+/** about Razor **/
+.about-razor {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.about-razor .showcases {
+    padding-top: 15px;
+    font-weight: 700;
+}
+
+.footer {
+    background-color: #F3F3F1;
+    color: #383839;
+    font-size: 0.7rem;
+    padding-top: 22px;
+}
+
+.img-thumbnail {
+    padding: .25rem;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: .25rem;
+    max-width: 100%;
+    height: auto;
+}
+
+.social-link {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(92, 91, 91);
+    border-radius: 50%;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+}
+
+.chosen-card {
+    width: 12rem;
+}
+
+@media (max-width: 576px) {
+    .profile {
+        width: 80px;
+        height: 80px;
+        align-items: center;
+
+    }
+}
+
+
+@media (max-width: 768px) {
+    .chosen-card {
+        width: 4rem;
+    }
+    .name-machine-chose {
+        font-size: 2.3vw;
+    }
+    .all-cards {
+        margin-top: 2rem!important;
+    }
+}
