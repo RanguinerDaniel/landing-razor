@@ -47,7 +47,7 @@
                             <a class="nav-link" href="#about-razor">Sobre a razor</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#catalogo"> Catálogo</a>
+                            <a class="nav-link" href="#catalogo">Catalogo</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#our-team">Nossa equipe</a>
@@ -68,7 +68,7 @@
                 <p class="hero-subtitle col-md-6">
                     Cuidadosamente modelados para transformar a
                     realidadade dos seus projetos, muito mais agilidade na busca pela máxima produtividade.</p>
-                <a type="button" href="#catalogo" class="d-flex justify-content-center btn button-hero btn-lg">Faça sua
+                <a type="button" href="#catalogo" class="d-flex button-pattern-color justify-content-center btn button-hero btn-lg">Faça sua
                     escolha</a>
             </div>
         </div>
@@ -118,8 +118,8 @@
                             <p class="especs">Intel Core I3-12100</p>
                             <p class="especs">Intel UHD Graphics</p>
                             <p class="especs">DDR4 até 3200MHz</p><br>
-                            <a onclick="selected(1);" href="#contact-us" class="btn btn-primary mb-4"
-                                style="background-color: blueviolet;">Orçar Agora</a>
+                            <a href="#contact-us"
+                                class="btn btn-primary mb-4 button-pattern-color">Orçar Agora</a>
                         </div>
                     </div>
                 </div>
@@ -134,8 +134,8 @@
                             <p class="especs">AMD Ryzen 5 5600G ou Intel Core i5-12400</p>
                             <p class="especs">GeForce GTX 1650</p>
                             <p class="especs">DDR4 até 3200MHz</p>
-                            <a onclick="selected(2);" href="#contact-us" class="btn btn-primary mb-4"
-                                style="background-color: blueviolet;">Orçar Agora</a>
+                            <a href="#contact-us"
+                                class="btn btn-primary mb-4 button-pattern-color">Orçar Agora</a>
                         </div>
                     </div>
                 </div>
@@ -150,8 +150,8 @@
                             <p class="especs">AMD Ryzen 7 5800G ou Intel Core i5-12400</p>
                             <p class="especs">GeForce RTX 3050 ou RTX 3060</p>
                             <p class="especs">DDR4 até 3200MHz</p>
-                            <a onclick="selected(3)" href="#contact-us" class="btn btn-primary mb-4"
-                                style="background-color: blueviolet;">Orçar Agora</a>
+                            <a href="#contact-us"
+                                class="btn btn-primary mb-4 button-pattern-color">Orçar Agora</a>
                         </div>
                     </div>
                 </div>
@@ -166,8 +166,8 @@
                             <p class="especs">AMD Ryzen Threadripper 3960X ou 397WX</p>
                             <p class="especs">GeForce GTX 1650</p>
                             <p class="especs">DDR4 até 3200MHz</p>
-                            <a onclick="selected(4)" href="#contact-us" class="btn btn-primary mb-4"
-                                style="background-color: blueviolet;">Orçar Agora</a>
+                            <a href="#contact-us"
+                                class="btn btn-primary mb-4 button-pattern-color">Orçar Agora</a>
                         </div>
                     </div>
                 </div>
@@ -297,7 +297,7 @@
                         <div class="col m-auto">
                             <input class="form-check-input" type="hidden" id="lean" value="1">
                             <label class="form-check-label" for="lean">
-                                <div class="card chosen-card" onclick="selected(1, true);">
+                                <div class="card chosen-card">
                                     <img draggable="false" id="lean-selector" class="card-img-top"
                                         src="../project/assets/img/lean.jpg" alt="Card image cap">
                                     <div class="card-body">
@@ -309,7 +309,7 @@
                         <div class="col m-auto">
                             <input class="form-check-input" type="hidden" id="talent" value="2">
                             <label class="form-check-label" for="talent">
-                                <div class="card chosen-card" onclick="selected(2, true);">
+                                <div class="card chosen-card">
                                     <img draggable="false" id="talent-selector" class="card-img-top"
                                         src="../project/assets/img/talent.jpg" alt="Card image cap">
                                     <div class="card-body">
@@ -322,7 +322,7 @@
                         <div class="col m-auto">
                             <input class="form-check-input" type="hidden" id="prodigy" value="3">
                             <label class="form-check-label" for="prodigy">
-                                <div class="card chosen-card" onclick="selected(3, true);">
+                                <div class="card chosen-card">
                                     <img draggable="false" id="prodigy-selector" class="card-img-top"
                                         src="../project/assets/img/prodigy.jpg" alt="Card image cap">
                                     <div class="card-body">
@@ -335,7 +335,7 @@
                         <div class="col m-auto">
                             <input class="form-check-input" type="hidden" id="virtuos" value="4">
                             <label class="form-check-label" for="virtuos">
-                                <div class="card chosen-card" onclick="selected(4, true);">
+                                <div class="card chosen-card">
                                     <img draggable="false" id="virtuos-selector" class="card-img-top"
                                         src="../project/assets/img/virtuos.jpg" alt="Card image cap">
                                     <div class="card-body">
@@ -346,11 +346,13 @@
                         </div>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary btn-lg btn-block mt-5 w-100">Enviar</button>
+                <div class="mt-1 mb-2">
+                   <button type="submit" class="btn btn-primary button-pattern-color btn-lg btn-block w-100 mt-5">Enviar</button>
+                </div>
             </form>
         </div>
     </div>
-    <footer class="footer text-center mt-4">
+    <footer class="footer text-center mt-md-5">
         <p>© Razor do Brasil LTDA | Desenvolvido por Código Fonte 2022</p>
     </footer>
     <!---- static files - JS ---->
