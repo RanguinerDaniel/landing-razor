@@ -37,14 +37,17 @@
     color: #ffffff !important;
 }
 
-.button-hero {
+.button-pattern-color  {
     background-color: #6833F4;
     color: #ffff;
+}
+
+.button-hero {
     margin-top: 30px;
     font-weight: 600;
 }
 
-.button-hero:hover {
+.button-pattern-color:hover {
     color: #ffffff;
     background-color: #7115F2;
 }
